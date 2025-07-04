@@ -18,7 +18,7 @@ variable "nims" {
 default = ["sp1","sp2","sp3","sp4"]
 }
 
-resource "azurerm_resource_group" "saurabh" {
+# resource "azurerm_resource_group" "saurabh" {
 count = length(var.nims)
 name = var.nims[count.index]
 location = "East US"
